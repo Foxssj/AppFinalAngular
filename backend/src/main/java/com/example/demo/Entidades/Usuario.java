@@ -18,20 +18,15 @@ public class Usuario {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idCliente;
+	private Long idUsuario;
 	private String nombre;
-	private String direccion;
+	private String direccion;	
+	private String Email;
+	private String Password;
 
 	@OneToMany(mappedBy = "cliente")
 	private List<Pedido> pedidos;
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idAdmin;
-
-	private String adminNombre;
-	private String adminEmail;
-	private String adminPassword;
 
 	@OneToOne
 	private boolean esAdmin;

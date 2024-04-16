@@ -1,8 +1,0 @@
-
-	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 00b4a9d946c61d6236a1df9eb6490236h
-j
-java:S1068"/Remove this unused "adminNombre" private field.8ÏÙü²î1b 3436c24d713b12caa0619265eb864458h
-i
-java:S1068".Remove this unused "adminEmail" private field.8ÏÙü²î1b 4e316534603f5fa96520e332fab54c10h
-l
-java:S1068"1Remove this unused "adminPassword" private field.8ÏÙü²î1b 33d87fd364516f6604124fcc76fdd279h

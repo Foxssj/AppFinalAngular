@@ -1,0 +1,7 @@
+package com.example.demo.Repositorio;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PedidoRepositorio extends JpaRepository<PedidoRepositorio, Long>{
+
+}

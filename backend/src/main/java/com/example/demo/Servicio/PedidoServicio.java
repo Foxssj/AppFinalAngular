@@ -39,7 +39,7 @@ public class PedidoServicio {
 		return pedidoRepositorio.findAll();
 	}
     
-	public String agregarARestaurante(Long idRestaurante, Long idPedido) {
+	public String agregarRestaurante(Long idRestaurante, Long idPedido) {
 		try {
 			Restaurante rest = restauranteRepositorio.findById(idRestaurante).get();
 		    Pedido pedido = pedidoRepositorio.findById(idPedido).get();
@@ -54,7 +54,7 @@ public class PedidoServicio {
 		}
 	}
 	
-	public String agregarARepartidor(Long idRepartidor, Long idPedido) {
+	public String agregarRepartidor(Long idRepartidor, Long idPedido) {
 		try {
 			Repartidor rep = repartidorRepositorio.findById(idRepartidor).get();
 		    Pedido pedido = pedidoRepositorio.findById(idPedido).get();
@@ -63,7 +63,7 @@ public class PedidoServicio {
 			pedido.setRepartidor(rep);
 		    rep.setPedidos(pedidos);
 		    repartidorRepositorio.save(rep);
-		    return "Se ha agregado el pedido al restaurante correctamente";
+		    return "Se ha agregado el pedido al repartidor correctamente";
 		} catch (Exception e) {
 			return e.getMessage();
 		}

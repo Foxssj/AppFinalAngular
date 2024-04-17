@@ -16,7 +16,7 @@ import com.example.demo.Entidades.Pedido;
 import com.example.demo.Servicio.PedidoServicio;
 
 @RestController
-@RequestMapping("/pedido")
+@RequestMapping("/order")
 public class PedidoControlador {
 	
 	@Autowired
@@ -47,12 +47,12 @@ public class PedidoControlador {
 	
 	@PutMapping("/addRestaurant/{idRestaurante}/{idPedido}")
 	public String agregarARestaurante(@PathVariable long idRestaurante , @PathVariable long idPedido) {
-		return servicio.agregarARestaurante(idRestaurante, idPedido);
+		return servicio.agregarRestaurante(idRestaurante, idPedido);
 	}
 	
 	@PutMapping("/addDelivery/{idRepartidor}/{idPedido}")
 	public String agregarARepartidor(@PathVariable long idRepartidor , @PathVariable long idPedido) {
-		return servicio.agregarARepartidor(idRepartidor, idPedido);
+		return servicio.agregarRepartidor(idRepartidor, idPedido);
 	}
 	
 	

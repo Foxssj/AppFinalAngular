@@ -1,5 +1,7 @@
 package com.example.demo.Servicio;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +26,10 @@ public class RestauranteServicio {
     
     public void borrarRestaurante(Long id) {
 		restauranteRepositorio.deleteById(id);
+	}
+    
+	public List<Restaurante> mostrarTodo(){
+		return restauranteRepositorio.findAll();
 	}
 	
 }

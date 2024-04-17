@@ -9,7 +9,7 @@ import com.example.demo.Entidades.Pedido;
 @Repository
 public interface PedidoRepositorio extends JpaRepository<Pedido, Long>{
 
-    @Query("select c from Pedido c where c.nombre = ?1")
+    @Query("select c from Pedido c where c.fecha = ?1")
     Pedido getPedidoByNombrePedido(String fecha);
     
 

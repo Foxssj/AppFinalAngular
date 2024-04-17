@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.Entidades.Restaurante;
 
 @Repository
-public interface RestauranteRepositorio extends JpaRepository<RestauranteRepositorio, Long>{
+public interface RestauranteRepositorio extends JpaRepository<Restaurante, Long>{
 
     @Query("select c from Restaurante c where c.nombre = ?1")
     Restaurante getRestauranteByNombreRestaurante(String nombre);

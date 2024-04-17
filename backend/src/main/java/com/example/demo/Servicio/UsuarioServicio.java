@@ -12,6 +12,7 @@ import com.example.demo.Entidades.Pedido;
 import com.example.demo.Entidades.Usuario;
 import com.example.demo.Repositorio.PedidoRepositorio;
 import com.example.demo.Repositorio.UsuarioRepositorio;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Service
 public class UsuarioServicio {
@@ -28,7 +29,11 @@ public class UsuarioServicio {
         return usuarioRepositorio.findById(id).get();
     }
     
-    public void deleteUsuario(Long id) {
+	public List<Usuario> mostrarTodo(){
+		return usuarioRepositorio.findAll();
+	}
+    
+    public void borrarUsuario(Long id) {
 		Usuario user = usuarioRepositorio.findById(id).get();
 		user.setPedidos(null);
 		usuarioRepositorio.save(user);
@@ -36,7 +41,7 @@ public class UsuarioServicio {
 	}
     
 
-	public String updateBarco(Long id,Usuario NuevosDatos) {
+	public String actualizarUsuario(Long id,Usuario NuevosDatos) {
 		try {
 			Usuario user = usuarioRepositorio.findById(id).get();
 			StringBuilder datoModificado = new StringBuilder();
@@ -69,6 +74,7 @@ public class UsuarioServicio {
 		
 	}
     
+	
 	public String agregarPedido(Long idUsuario, Long idPedido) {
 		try {
 			Usuario user = usuarioRepositorio.findById(idUsuario).get();
@@ -78,7 +84,7 @@ public class UsuarioServicio {
 			pedido.setUsuario(user);
 		    user.setPedidos(pedidos);
 		    usuarioRepositorio.save(user);
-		    return "Se ha agregado el pedido correctamente";
+		    return "Se ha agregado el pedido al usuario correctamente";
 		} catch (Exception e) {
 			return e.getMessage();
 		}

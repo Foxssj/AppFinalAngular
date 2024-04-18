@@ -31,6 +31,9 @@ public class JwsService {
     	
     	extraClaims.put("username", currentUser.getUsername());
         extraClaims.put("email", currentUser.getEmail());
+        extraClaims.put("firstname", currentUser.getFirstname());
+        extraClaims.put("lastname", currentUser.getLastName());
+        extraClaims.put("id", currentUser.getId());
         
         return Jwts
             .builder()

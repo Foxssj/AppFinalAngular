@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './service/api.service';
+import { Router } from '@angular/router';
+
 
 
 
@@ -16,4 +18,12 @@ import { ApiService } from './service/api.service';
 })
 export class AppComponent {
   title = 'LoginAngular';
+
+  constructor(
+    private router: Router,
+  ) {}
+
+  goToHome() {
+    this.router.navigate(['/homeScreen']);
+  }
 }

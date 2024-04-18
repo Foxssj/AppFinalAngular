@@ -100,7 +100,6 @@ INDEX VERSION 1.134+C:\Users\a925516\Documents\practica final Spring-Angular\.me
 2736844987.index
 1729234594.index
 2662609129.index
-1965174767.index
 2133873447.index
 1567933280.index
 1414823917.index

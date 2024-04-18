@@ -1,7 +1,8 @@
-<div class="container" style="width: 30%; margin-top: 6%;">
+
+<!-- login -->
+<div class="container" style="width: 30%; margin-top: 10%;">
   <article class="card-body">
-    <h2 class="card-title text-center mb-4 mt-1">Log in</h2>
-    <hr class="colorgraph" />
+    <h1 class="card-title text-center mb-4 mt-1">Log in</h1>
     <form>
       <div class="form-group">
         <div class="input-group">
@@ -11,9 +12,10 @@
             class="form-control"
             placeholder="Username"
             type="text"
+            style="padding: 3.5%;"
           />
         </div>
-        <hr class="colorgraph" />
+        <br class="colorgraph" />
       </div>
       <div class="form-group">
         <div class="input-group">
@@ -23,18 +25,19 @@
             class="form-control"
             placeholder="Password"
             type="password"
+            style="padding: 3.5%;"
           />
         </div>
         <br />
       </div>
       <div class="form-group" style="margin-left: 33%;">
-        <button (click)="Login(loginForm)" class="btn btn-primary btn-block" style="background-color: #6604a8; border-color: #6604a8; padding-inline: 20%;">
+        <button (click)="Login(loginForm)" class="btn btn-primary btn-block" style="background-color: #f09d02; border-color: #f09d02; padding-inline: 20%;">
           Login
         </button>
       </div>
-      <p class="text-center">
-        <a (click)="goToRegister()" class="btn">New here? Sing-up!</a>
-      </p>
     </form>
   </article>
 </div>
+<p style="margin-left: 75%; margin-top: 10%;">
+  <a (click)="goToRegister()" class="btn">New here? <span style="color: #f09d02;">Sing-up!</span></a>
+</p>

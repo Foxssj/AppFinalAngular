@@ -1,5 +1,6 @@
 package com.example.demo.Entidades;
 
+import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class Register {
 	String username;
 	String password;
-	String fistname;
+	String firstname;
 	String lastname;
 	String country;
 	String email;

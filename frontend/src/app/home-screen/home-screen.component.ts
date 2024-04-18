@@ -35,6 +35,7 @@ export class HomeScreenComponent implements OnInit {
 
     this.user.username = decodedToken.username
     this.user.email = decodedToken.email
+    
   }
 
 

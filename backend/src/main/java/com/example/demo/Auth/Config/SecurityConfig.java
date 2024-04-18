@@ -33,6 +33,10 @@ public class SecurityConfig {
             .authorizeHttpRequests(authRequest ->
               authRequest
                 .requestMatchers("/auth/**").permitAll()
+                .requestMatchers("/order/**").permitAll()
+                .requestMatchers("/restaurant/**").permitAll()
+                .requestMatchers("/delivery/**").permitAll()
+                .requestMatchers("/user/**").permitAll()
                 .anyRequest().authenticated()
                 )
             .sessionManagement(sessionManager->

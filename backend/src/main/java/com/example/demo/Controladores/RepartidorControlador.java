@@ -26,7 +26,7 @@ public class RepartidorControlador {
 		return servicio.mostrarTodo();
 	}
 	
-	@GetMapping("/{idPedido}")
+	@GetMapping("get/{idPedido}")
 	public Repartidor findById(@PathVariable long idPedido) {
 		return servicio.obtenerRepartidorPorId(idPedido);
 	}
@@ -36,7 +36,7 @@ public class RepartidorControlador {
 		return servicio.guardarRepartidor(repartidor);
 	}
 	
-	@DeleteMapping("/{idPedido}")
+	@DeleteMapping("delete/{idPedido}")
 	public String borrarPedido(@PathVariable long idRepartidor) {
 		servicio.borrarRepartidor(idRepartidor);
 		return "Borrado";

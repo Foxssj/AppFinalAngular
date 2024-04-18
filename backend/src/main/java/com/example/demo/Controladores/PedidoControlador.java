@@ -29,7 +29,7 @@ public class PedidoControlador {
 		return servicio.mostrarTodo();
 	}
 	
-	@GetMapping("/{idPedido}")
+	@GetMapping("/get/{idPedido}")
 	public Pedido findById(@PathVariable long idPedido) {
 		return servicio.obtenerPedidoPorId(idPedido);
 	}
@@ -39,7 +39,7 @@ public class PedidoControlador {
 		return servicio.guardarPedido(pedido);
 	}
 	
-	@DeleteMapping("/{idPedido}")
+	@DeleteMapping("/delete/{idPedido}")
 	public String borrarPedido(@PathVariable long idPedido) {
 		servicio.borrarPedido(idPedido);
 		return "Borrado";

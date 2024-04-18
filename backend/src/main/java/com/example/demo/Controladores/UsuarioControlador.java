@@ -35,7 +35,7 @@ public class UsuarioControlador {
 		return servicio.mostrarTodo();
 	}
 	
-	@GetMapping("/{idUsuario}")
+	@GetMapping("get/{idUsuario}")
 	public Usuario findById(@PathVariable long idUsuario) {
 		return servicio.obtenerUsuarioPorId(idUsuario);
 	}
@@ -45,7 +45,7 @@ public class UsuarioControlador {
 		return servicio.guardarUsuario(usuario);
 	}
 	
-	@DeleteMapping("/{idUsuario}")
+	@DeleteMapping("delete/{idUsuario}")
 	public String borrarUsuario(@PathVariable long idUsuario) {
 		servicio.borrarUsuario(idUsuario);
 		return "Borrado";

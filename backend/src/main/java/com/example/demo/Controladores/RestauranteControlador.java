@@ -25,7 +25,7 @@ public class RestauranteControlador {
 		return servicio.mostrarTodo();
 	}
 	
-	@GetMapping("/{idRestaurante}")
+	@GetMapping("get/{idRestaurante}")
 	public Restaurante findById(@PathVariable long idRestaurante) {
 		return servicio.obtenerRestaurantePorId(idRestaurante);
 	}
@@ -35,7 +35,7 @@ public class RestauranteControlador {
 		return servicio.guardarRestaurante(restaurante);
 	}
 	
-	@DeleteMapping("/{idRestaurante}")
+	@DeleteMapping("delete/{idRestaurante}")
 	public String borrarRestaurante(@PathVariable long idRestaurante) {
 		servicio.borrarRestaurante(idRestaurante);
 		return "Borrado";

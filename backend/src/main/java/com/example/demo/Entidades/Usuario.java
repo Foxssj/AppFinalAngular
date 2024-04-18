@@ -21,6 +21,10 @@ public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idUsuario;
+	
+	@Basic
+	@Column(nullable = false)
+	@NotBlank
 	private String username;
 	
 	@Basic

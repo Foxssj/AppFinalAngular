@@ -8,4 +8,12 @@
 		<section name="ImportExportWizard.dialogBounds">
 		</section>
 	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="com.xliic.openapi.wizard.yaml.v3"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.xliic.openapi.wizard"/>
+		</list>
+		<section name="NewWizard.dialogBounds">
+		</section>
+	</section>
 </section>

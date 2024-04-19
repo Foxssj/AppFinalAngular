@@ -27,18 +27,24 @@ export class ApiService {
     return this.http.post<ResponseI>(this.urlLogin, form);
   }
 
-  addUser(form: LoginI): Observable<ResponseI> {
-    return this.http.post<ResponseI>(this.urlUser, form);
+  addUser(form: LoginI): Observable<RegisterI> {
+    return this.http.post<RegisterI>(this.urlUser, form);
   }
 
-  deleteUser(form: LoginI): Observable<ResponseI> {
+  deleteUser(form: LoginI): Observable<any> {
     let urlDeleteUser = this.urlUser + "{idUser}"
-    return this.http.post<ResponseI>(urlDeleteUser, form);
+    return this.http.delete(urlDeleteUser);
   }
 
-  User(form: LoginI): Observable<ResponseI> {
-    let urlAddUser = this.urlUser + ""
-    return this.http.post<ResponseI>(urlAddUser, form);
+  // User(form: LoginI): Observable<RegisterI> {
+  //   let urlAddUser = this.urlUser + ""
+  //   return this.http.post<RegisterI>(urlAddUser, form);
+  // }
+
+  getUsers(): Observable<RegisterI[]> {
+    let getUserUrl = this.urlUser + "all";
+    const headers = new HttpHeaders({ 'Authorization': `Bearer ${this.authService.getToken()}` });
+    return this.http.get<RegisterI[]>(getUserUrl);
   }
 
 }

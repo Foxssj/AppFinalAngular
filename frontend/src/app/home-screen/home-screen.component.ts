@@ -38,10 +38,4 @@ export class HomeScreenComponent implements OnInit {
     
   }
 
-
-  Logout() {
-    this.authService.deleteSessionToken();
-    this.router.navigate(['/login']);
-  }
-
 }

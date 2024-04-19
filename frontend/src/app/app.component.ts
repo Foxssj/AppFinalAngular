@@ -26,4 +26,12 @@ export class AppComponent {
   goToHome() {
     this.router.navigate(['/homeScreen']);
   }
+
+  goToAbout() {
+    this.router.navigate(['/aboutUs']);
+  }
+
+  goToUser() {
+    this.router.navigate(['/user']);
+  }
 }

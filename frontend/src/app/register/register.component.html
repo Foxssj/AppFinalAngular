@@ -1,0 +1,107 @@
+<div class="container" style="align-items: center; width: 60%; margin-left: 35%; margin-top: 6%;">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+      <form role="form">
+        <h2 style="margin-left: 35%;">Sing up</h2>
+        <hr class="colorgraph" />
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                [(ngModel)]="RegisterForm.firstname"
+                name="first_name"
+                id="first_name"
+                class="form-control input-lg"
+                placeholder="First Name"
+                tabindex="1"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                [(ngModel)]="RegisterForm.lastname"
+                name="last_name"
+                id="last_name"
+                class="form-control input-lg"
+                placeholder="Last Name"
+                tabindex="2"
+              />
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="form-group">
+          <input
+            type="text"
+            name="display_name"
+            [(ngModel)]="RegisterForm.username"
+            id="display_name"
+            class="form-control input-lg"
+            placeholder="Display Name"
+            tabindex="3"
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            [(ngModel)]="RegisterForm.email"
+            id="email"
+            class="form-control input-lg"
+            placeholder="Email Address"
+            tabindex="4"
+          />
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+              <input
+                type="password"
+                [(ngModel)]="RegisterForm.password"
+                name="password"
+                id="password"
+                class="form-control input-lg"
+                placeholder="Password"
+                tabindex="5"
+              />
+            </div>
+          </div>
+        </div>
+         <br />
+        <hr class="colorgraph" />
+        <div class="row">
+          <div class="col-xs-12 col-md-6" style="margin-left: 29%;">
+            <input
+              type="submit"
+              (click)="Register(RegisterForm)"
+              value="Register"
+              class="btn btn-primary btn-block btn-lg"
+              style="background-color: #f09d02; border-color: #f09d02; padding-inline: 20%;"
+              tabindex="7"
+            />
+          </div>
+          <p class="text-center" style="margin-left: 100%; margin-top: 10%;">
+            <a (click)="goToLogin()" class="btn">Already have an account? <span style="color: #f09d02;">Log-in!</span></a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="t_and_c_m"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModalLabel"
+    aria-hidden="true"
+  >
+    
+  </div>
+  <!-- /.modal -->
+</div>

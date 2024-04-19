@@ -2,8 +2,9 @@
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1713256240895_0" label="Java Main Sources" name="Java Main Sources"/>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1713256240920_1" label="Java Test Sources" name="Java Test Sources"/>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1713256262000_3" label="JPA" name="JPA">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/JPA" type="4"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1713256262000_3" label="JPA" name="JPA"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1713265871723_4" label="BackEnd" name="BackEnd">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/backend" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1713256241920_2" label="Window Working Set" name="Aggregate for window 1713256241920"/>
 </workingSetManager>

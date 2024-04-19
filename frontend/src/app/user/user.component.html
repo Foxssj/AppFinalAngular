@@ -1,0 +1,26 @@
+<main>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col=12 mt-3">
+        <div class="jumbotron">
+          <h1 class="display-4">Welcome!</h1>
+          <p class="lead">
+            Nombre: {{ user.username }}, Email: {{ user.email }}
+          </p>
+          <hr class="my-4" />
+          <p class="lead">
+            <button
+              class="btn btn-primary btn-lg"
+              href="#"
+              type="submit"
+              (click)="Logout()"
+              style="background-color: #f09d02; border-color: #f09d02"
+            >
+              Log out
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\a925516\Documents\practica final Spring-Angular\backend"/>
 			<item value="C:\Users\a925516\Documents\practica fiinal Spring-Angular\JPA"/>
 		</list>
 		<list key="projectNameTemplate">

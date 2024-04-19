@@ -1,7 +1,0 @@
-package com.example.demo.Repositorio;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface Restaurante extends JpaRepository<Restaurante, ID>{
-
-}

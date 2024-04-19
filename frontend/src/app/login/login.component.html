@@ -1,0 +1,43 @@
+
+<!-- login -->
+<div class="container" style="width: 30%; margin-top: 10%;">
+  <article class="card-body">
+    <h1 class="card-title text-center mb-4 mt-1">Log in</h1>
+    <form>
+      <div class="form-group">
+        <div class="input-group">
+          <input
+            [(ngModel)]="loginForm.username"
+            name="username"
+            class="form-control"
+            placeholder="Username"
+            type="text"
+            style="padding: 3.5%;"
+          />
+        </div>
+        <br class="colorgraph" />
+      </div>
+      <div class="form-group">
+        <div class="input-group">
+          <input
+            [(ngModel)]="loginForm.password"
+            name="password"
+            class="form-control"
+            placeholder="Password"
+            type="password"
+            style="padding: 3.5%;"
+          />
+        </div>
+        <br />
+      </div>
+      <div class="form-group" style="margin-left: 33%;">
+        <button (click)="Login(loginForm)" class="btn btn-primary btn-block" style="background-color: #f09d02; border-color: #f09d02; padding-inline: 20%;">
+          Login
+        </button>
+      </div>
+    </form>
+  </article>
+</div>
+<p style="margin-left: 75%; margin-top: 10%;">
+  <a (click)="goToRegister()" class="btn">New here? <span style="color: #f09d02;">Sing-up!</span></a>
+</p>

@@ -1,8 +1,0 @@
-
-ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 7e829a3e2feac14bb9d14971d528d818h
-v
-java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
-ã
-java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.8ıﬁœ≥Ó1b 7118cb841d5cf201b0a5d7de0dfc7c96h
-x
-java:S1128"=Remove this unused import 'java.util.NoSuchElementException'.8ıﬁœ≥Ó1b 65d473db9d60420cdc434518f12efff3h
